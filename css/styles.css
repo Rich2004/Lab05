@@ -16,7 +16,6 @@ h1 {
 }
 
 table {
-
   border: 3px solid #000;
   border-collapse: collapse;
   font-family: "Trebuchet MS", "Helvetica", sans-serif;
@@ -25,7 +24,6 @@ table {
   table-layout: fixed;
   width: 70%;
   height: auto;
-
 }
 
 td {
@@ -37,16 +35,13 @@ td {
   text-align: left;
 }
 
-
 th {
   background-color: #F5DEB3;
   border: 1px solid #000;
   font-size: 1.25em;
   padding: 5px;
   text-align: left;
-
 }
-
 
 tr {
   border: 1px solid #000;
