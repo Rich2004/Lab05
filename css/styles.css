@@ -6,6 +6,11 @@ body {
   font-weight:bold;
   font-size:1.25em;
   font-family: 'Raleway', sans-serif;
+  background-color: burlywood;
+  border: 1px solid #000;
+}
+span{
+  font-size:1.25em;
 }
 
 table {
@@ -25,7 +30,7 @@ table caption {
 
 table tr {
   background-color: #f8f8f8;
-  border: 1px solid #ddd;
+ 
   padding: .35em;
 }
 
@@ -34,7 +39,7 @@ table td {
   padding: .625em;
   text-align: center;
   font-family: 'IBM Plex Mono', monospace;
-   border: 1px solid #ddd;
+   border: 1px solid darkgray;
 }
 
 table th {
@@ -42,6 +47,8 @@ table th {
   letter-spacing: .1em;
   text-transform: uppercase;
   font-family: 'Raleway', sans-serif;
+   background-color: burlywood;
+   border: 1px solid #000;
 }
 
 @media screen and (max-width: 600px) {
