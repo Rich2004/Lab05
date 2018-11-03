@@ -1,56 +1,91 @@
 body {
-  background-color: #CCCCC0;
-  color: #000000;
+  background-color: #ccccc0;
+  color:#000000;
 }
-
-h1 {
+.planet{
+  font-weight:bold;
+  font-size:1.25em;
   font-family: 'Raleway', sans-serif;
-  font-size: 2.3em;
-  padding: 10px 0px 10px 0px;
-  margin-top: 25px;
-  text-align: center;
-  text-shadow: 2px 2px 3px #C0C0C0;
-}
-
-.planet {
-  font-family: 'Raleway', sans-serif;
-  font-size: 1.4em;
-  font-weight: bold;
 }
 
 table {
-  border: 3px solid #000;
+  border: 1px solid #ccc;
   border-collapse: collapse;
-  margin: 0% 15% 0% 15%;
+  margin:auto;
   padding: 0;
+  width: 90%;
   table-layout: fixed;
-  width: 70%;
-  height: auto;
-
 }
 
-td {
-  background-color: #fffff7;
-  border: 1px solid #000;
-  font-family: 'IBM Plex Mono', monospace;
-  font-size: 1.0;
-  line-height: 1.2m;
-  padding: 5px 5px 3px 5px;
-  text-align: left;
-}
-
-th {
-  background-color: #DFDFDF;
-  border: 1px solid #000;
-  font-size: 1.3em;
+table caption {
+  font-size: 1.75em;
+  margin: .5em 0 .75em;
   font-family: 'Raleway', sans-serif;
-  font-weight: bold;
-  line-height: 1.0em;
-  padding: 5px;
-  text-align: left;
 }
 
-tr {
-  border: 1px solid #000;
-  margin-bottom: .625em;
+table tr {
+  background-color: #f8f8f8;
+  border: 1px solid #ddd;
+  padding: .35em;
+}
+
+table th,
+table td {
+  padding: .625em;
+  text-align: center;
+  font-family: 'IBM Plex Mono', monospace;
+   border: 1px solid #ddd;
+}
+
+table th {
+  font-size: 1.15em;
+  letter-spacing: .1em;
+  text-transform: uppercase;
+  font-family: 'Raleway', sans-serif;
+}
+
+@media screen and (max-width: 600px) {
+  table {
+    border: 0;
+  }
+
+  table caption {
+    font-size: 1.4em;
+  }
+  
+  table thead {
+    border: none;
+    clip: rect(0 0 0 0);
+    height: 1px;
+    margin: -1px;
+    overflow: hidden;
+    padding: 0;
+    position: absolute;
+    width: 1px;
+  }
+  
+  table tr {
+    border-bottom: 3px solid #ddd;
+    display: block;
+    margin-bottom: .625em;
+  }
+  
+  table td {
+    border-bottom: 1px solid #ddd;
+    display: block;
+    font-size: .8em;
+    text-align: right;
+  }
+  
+  table td::before {
+   
+    content: attr(data-label);
+    float: left;
+    font-weight: bold;
+    text-transform: uppercase;
+  }
+  
+  table td:last-child {
+    border-bottom: 0;
+  }
 }
